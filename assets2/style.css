@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+  --primary-color: linear-gradient(to right,rgb(76 175 80 / 100%), rgb(0 150 136 / 100%));
+}
+*{ /*reset css */
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-image: url(https://i.pinimg.com/564x/51/d5/cf/51d5cf3f0229097968087b797005e955.jpg);
+    backdrop-filter: blur(4px);
+    background-size: 100%;
+    font-family: "Raleway";
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    letter-spacing: 0.5px;
+}
+.contentBx{
+  width: 500px;
+  background: rgb(255, 255, 255,0.5);
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inputBx input[type="text"],.inputBx input[type="password"] {
+  background: none;
+  text-align: left;
+  outline: none;
+  padding: 10px;
+  border: 3px solid #354a82;
+  border-radius: 24px;
+  margin: 10px auto;
+  color: #354a82;
+  transition: 0.2s;
+  font-weight: 700;
+  font-size: 14px;
+}
+.inputBx input{
+  width: 100%;
+}
+.inputBx span{
+  color: rgb(53, 74, 130);
+  font-weight: 700;
+  font-size: 15px;
+}
+.contentBx h1{
+  color:  #354a82;
+  font-size: 20px;
+  border-bottom: 3px solid  #354a82;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.inputBx input[type="text"]:focus,.inputBx input[type="password"]:focus{
+  border: 3px solid #354a82;
+  transform: scale(1.1);
+}
+.inputBx input[type="button"]{
+  margin-top: 10px;
+  padding: 10px 24px;
+  color: white;
+  font-weight: 700;
+  background: none;
+  border: 3px solid #354a82;
+  border-radius: 24px;
+  transition: 0.2s;
+  background: #354a82;
+  cursor: pointer;
+}
+
+.inputBx input[type="button"]:focus{
+  transform: scale(1.1);
+}
+.remember {
+  font-weight: 500;
+  font-size: 14px;
+  color: #354a82;
+}
+.remember input[type="checkbox"]{
+  margin-right: 5px;
+}
+.main{
+  display: flex;
+  box-shadow: 1px 1px 3px rgb(0 0 0 / 20%);
+}
+.background{
+  width: 480px;
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.background::before{
+  content: "";
+  width: 480px;
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(45deg,#fff,#aaa);
+  z-index: 1;
+}
+.background img{
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.1);
+}
